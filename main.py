@@ -51,9 +51,7 @@ async def dicesides(ctx, *, msg):
 
 @bot.command()
 async def dicemm(ctx, *, msg):
-    print(msg)
     list = str(msg).strip().split(" ")
-    print(list)
     minside = int(list[0])
     maxside = int(list[1])
     if minside >= maxside:
@@ -79,3 +77,4 @@ async def coinflip(ctx):
 
 
 bot.run(token, log_handler=handler, log_level=logging.DEBUG)
+
