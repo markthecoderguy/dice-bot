@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import os
 import random
 
-load_dotenv()
+
 token = os.getenv('DISCORD_TOKEN')
 
 handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
@@ -113,5 +113,6 @@ async def mark(ctx):
     await ctx.send(f"{ctx.guild.get_member(810532743653228654).mention} mark is cool, creator of this amazing bot, mtn")
  
 bot.run(token, log_handler=handler, log_level=logging.DEBUG)
+
 
 
