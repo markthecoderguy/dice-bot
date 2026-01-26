@@ -59,7 +59,7 @@ async def dicemm(ctx, *, msg):
     elif maxside == 0:
         await ctx.send(f"{ctx.author.mention} i cant roll a 0 sided dice bro")
     elif maxside == 1:
-        await ctx.send(f"{ctx.author.mention} i cant roll a 0 sided dice bro")
+        await ctx.send(f"{ctx.author.mention} i cant roll a 1 sided dice bro")
     elif maxside > 1000000:
         await ctx.send(f"{ctx.author.mention} too many sides")
     else:
